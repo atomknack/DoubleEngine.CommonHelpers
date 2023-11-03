@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>netstandard2.1</TargetFramework>
+	  <Nullable>enable</Nullable>
+	  <LangVersion>Latest</LangVersion>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Collections.Pooled" Version="1.0.82" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="System.Collections.Immutable" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+	</ItemGroup>
+	
+</Project>
