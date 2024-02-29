@@ -10,10 +10,10 @@ public partial class FixedSizeArrayBufferWithLeeway<T> : ISpanable<T>
         throw new IndexOutOfRangeException();
     }
     private const int ADDITIONALLEEWAY = 131;
-#if TESTING
+
     [Obsolete("Use only for testing")]
-    internal static int TESTING_GetADDITIONALLEEWAY() => ADDITIONALLEEWAY;
-#endif
+    public static int TESTING_GetADDITIONALLEEWAY() => ADDITIONALLEEWAY;
+
     private readonly int _requestedSize;
     private readonly int _maxAllowedIndex;
     private readonly T[] _items;
